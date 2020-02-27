@@ -1,0 +1,31 @@
+ls#include <iostream>
+#include <string>
+using namespace std;
+
+//class definition
+class LibroCalificar
+{
+public:
+  
+  void MostrarMensaje( string CourseName)
+  {
+    cout<<"Bienvenido al libro de calificaciones para \n"<< CourseName<<"!"
+	<<endl;
+  }
+  
+};   
+
+// función principal comienza la ejecución del programa
+int main()
+{
+  string nameOfCourse;
+  LibroCalificar myLibroCalificar;
+
+  cout<<"Por favor ingrese el nombre del curso"<<endl;
+  getline(cin, nameOfCourse); //para guardar el dato e imprimirlo
+  cout<<endl;
+
+  myLibroCalificar.MostrarMensaje (nameOfCourse);
+  
+   return 0; 
+} 

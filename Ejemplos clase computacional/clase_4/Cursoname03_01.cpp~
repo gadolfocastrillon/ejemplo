@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+//class definition
+class LibroCalificar //para crear la clase, se coloca un nombre 
+{
+public: //Especificador de acceso
+  //se tiene que especificar que tipo de función es y se le da un nombre
+  //void tipo de valor de retorno
+  void displayMessage() //Crea una función 
+   {
+      cout << "Bienvendo al libro de calificaciones!" << endl;
+   } 
+};   //no olvida que para cerrar la clase debe ir un punto y coma
+
+
+// función principal comienza la ejecución del programa
+int main()
+{
+   LibroCalificar myLibroCalificar; 
+   myLibroCalificar.displayMessage(); 	
+
+   return 0; 
+} 
+
+
