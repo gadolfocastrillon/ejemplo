@@ -1,0 +1,10 @@
+import numpy as np
+
+
+def random():
+
+    a=np.random.randit()
+    
+    b=np.random.randit()
+
+    return a+b 
