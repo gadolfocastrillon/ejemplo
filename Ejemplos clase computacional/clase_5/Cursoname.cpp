@@ -1,10 +1,89 @@
 // Definiciones de funciones de miembro de LibroCalificar. Este archivo contiene
 // Implementaciones de las funciones miembro prototipadas en LibroCalificar.h.
 #include <iostream>
-using namespace std;
-
 #include "Cursoname.h"
 #include <iomanip>
+
+
+using namespace std;
+
+
+//Inicializa los miembros de datos contadores a 0
+
+LibroCalificar::LibroCalificar( string nombre)
+{
+  establecerNombreCurso(nombre);
+  aCuenta=0;
+  bCuenta=0;
+  cCuenta=0;
+  dCuenta=0;
+  fCuenta=0;
+}
+
+
+void LibroCalificar::recibirCalificacion()
+{
+  int calificacion; //Calificacion introducida por el usuario
+  cout<<"Escriba las calificaciones de letras."<<endl
+      <<"Escriba el caracter EOF para terminar la entrada."<<endl;
+  //itera hasta que el suario escriba la secuencia de fin de archivo
+  while (calificacion =! EOF){
+    //determina la calificacion que se introdujo
+    
+    switch(calificacion){
+      
+    case 'A':
+    case 'a':
+      aCuenta++;
+      break;
+
+    case 'B':
+    case 'b':
+      bCuenta++;
+      break;
+      
+    case 'C':
+    case 'c':
+      cCuenta++;
+      break;
+      
+    case 'D':
+    case 'd':
+      bCuenta++;
+      break;
+
+      
+    case 'F':
+    case 'f':
+      dCuenta++;
+      break;
+
+
+    case '\n': //ignora caracteres de nueva linea
+    case '\t': //tabuladores
+    case ' ': //y espacios en la entrada
+      break;
+
+    default: //atrapa todos los demás caracteres
+      cout<<"Se introdujo una letra de calificación incorrecta."
+	  <<"Escribe una nueva calificación."<<endl;
+      break;
+    }
+  }
+}
+
+void LibroCalificar::mostrarReporteCalificaciones()
+{
+  //imprime resumen de resultados
+  cout<< "\n La suma de los resultados es: "<<endl;
+  cout<<"\n Para A es: "<<aCuenta<<endl;
+  cout<<"\n Para B es: "<<bCuenta<<endl;
+  cout<<"\n Para C es: "<<cCuenta<<endl;
+  cout<<"\n Para D es: "<<dCuenta<<endl;
+  cout<<"\n Para F es: "<<fCuenta<<endl;
+}
+
+	 
 LibroCalificar::LibroCalificar( string name )
 {
    setCourseName( name ); 

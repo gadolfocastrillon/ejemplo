@@ -11,6 +11,8 @@ int main()
    LibroCalificar gradeBook1( "Introduction to C++ Programming" );
    LibroCalificar gradeBook2( "metodos computacionales II" );
 
+
+   
    /*
    cout << "libroCalificar1 creado para el  curso: " << gradeBook1.getCourseName()
       << "\n libroCalificar2 creado para el  curso: " << gradeBook2.getCourseName() 
@@ -22,7 +24,8 @@ int main()
 
    LibroCalificar milibroCalificar("CS101 Programacion en C++");
    milibroCalificar.displayMessage();
-   milibroCalificar.determinarPromedioClase();
+    milibroCalificar.determinarPromedioClase();
+   miLibroCalificar.mostrarReporteCalificaciones();
    
    return 0; 
 } 

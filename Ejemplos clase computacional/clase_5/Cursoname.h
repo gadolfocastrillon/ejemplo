@@ -16,6 +16,14 @@ public:
    void displayMessage();
    void determinarPromedioClase();
    
+   void mostrarReporteCalificaciones(); //muestra un reporte con base en las calificaciones 
+   
 private:
-   string courseName; 
+   string courseName; //Nombre del curso para este librocalificar
+ 
+   int aCuenta; //Cuenta de calificaciones A
+   int bCuenta;
+   int cCuenta;
+   int dCuenta;
+   int fCuenta; 
 };  
