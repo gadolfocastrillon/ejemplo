@@ -1,0 +1,10 @@
+#include "variables.h"
+
+int main()
+{
+  probabilidades a(1,10,2);
+
+  a.probabilidadNormal();
+
+  return 0 ;
+}

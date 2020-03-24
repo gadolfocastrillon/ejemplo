@@ -1,0 +1,14 @@
+
+class probabilidades
+{
+ private:
+  double alpha, tempo;
+
+ public:
+  probabilidades(double,double);
+  //void mostrarProbabilidadNormal ();
+  //void mostrarProbabilidadPoison ();
+  void setDatos(double,double);
+  void probabilidadNormal();
+  void probabilidadPoison();
+}; 

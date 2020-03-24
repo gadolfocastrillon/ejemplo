@@ -1,0 +1,16 @@
+#include <iostream>
+
+
+
+//calculo de la promedio aritmetico
+
+int n= 0;
+int multi = 1, divi = 1;
+int x;
+
+while(x!=999){
+
+  cout<<"Ingrese el valor de x: "<<endl;
+  cin>>x;
+
+ }

@@ -1,0 +1,35 @@
+#include<iostream>
+#include<math.h>
+#include "variables.h"
+
+using namespace std;
+
+/*Se ingresa desde donde quiere hallar la probabilidad hasta donde quiere que termine, ademas se ingresa la duracion promedio t */ 
+probabilidades::probabilidades(double c,double a,double t)
+{
+  setDatos(c,a,t);
+  const float Euler = 2.71828;
+}
+void probabilidades::setDatos(double c,double a,double t)
+{
+  inicio = c
+  final = a;
+  tempo = t;
+}
+void probabilidades::probabilidadNormal()
+{
+  float P;
+  double a;
+  cout<<"PROBABILIDAD NORMAL"<<endl;
+  for(double i = inicio;i<=final,i=i+1)
+    {
+      a = -i/tempo;
+      P=1 - pow(Euler,a);
+      cout<<"La probabilidad de sacar "<<i<<" es: "<<P<<endl;
+    }
+}
+
+  
+      
+      
+  

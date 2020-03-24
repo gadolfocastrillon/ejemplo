@@ -1,0 +1,17 @@
+#include <string>
+
+using namespace std;
+
+class series
+{
+ public:
+  series(double, double);
+  double serieAritmetica ( double, double );
+  double sereGeometrica (double, double) ;
+  void mostrarSeries();
+  
+  
+
+ private:
+  double inicio, multi;
+  
