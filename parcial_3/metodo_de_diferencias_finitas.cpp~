@@ -1,0 +1,12 @@
+#include <iostream>
+#include "metodo_de_diferencias_finitas.h"
+
+
+using namespace std;
+
+int main()
+{
+  metodo a(9,1,2,1,2);
+  //a.mostrarDatos();
+  a.paso();
+}
